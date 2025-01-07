@@ -46,3 +46,9 @@ Potential Enhancements:
         print("Valid Email.")
     else:
         print("Invalid Email.")
+
+# Future Enhancement Scopes:
+Further future enhancements include:
+1) Integration with third-party email validation APIs for more advanced checks (e.g., verifying if the email is disposable or if it exists on common spam lists).
+2) Adding a GUI for more user interaction, especially for non-programmers.
+3) Extend validation to check for disposable or temporary email services
