@@ -25,3 +25,37 @@ To use DNS lookups as part of your project (e.g., checking MX records for email 
 To install it, you can run:
 
     pip install dnspython
+
+# Program Logic Workflow:
+The user inputs an email address, e.g., example@domain.com.
+The script runs syntax checks using regular expressions to ensure the email is structured correctly.
+If the syntax is valid, it performs a DNS lookup to verify if the domain exists and if it can accept emails.
+The result is presented to the user:
+"Valid email address."
+"Invalid email address. Suggestions: Check for typos in the domain part."
+Potential Enhancements:
+
+# Simplified Code Version : [Advanced Email Validation Program]
+
+  # Conditions of a Valid Email ID :
+  # a - z
+  # 0 - 9
+  # "." "@" and "_" should occur only once.
+  # "." should occur only at index position [2] or [3] before the ending.
+
+  import re       # Importing the "REGEX" module.
+  email_condition = "^[a - z] + [\._] ? [a - z 0 - 9] + [@]\w + [.]\w {2 , 3} $"
+  # "^" denotes "startswith" in REGEX;
+  # "\" is used to search a character through REGEX;
+  # "?" returns either 0 ["False"] or 1 ["True"] in REGEX;
+  # "\w" is used to search a special character through REGEX;
+  # "{}" is used to find a specific character in a particular position through REGEX;
+  # "$" is used to find a specific character from right-to-left [i.e Negative Indexing] of the string in REGEX;
+
+  user_email = input("Enter Email ID: ")
+
+  # The "search" function within REGEX module will compare the user entered email [i.e "user_email"] with the conditions set for a valid Email ID [i.e "email_condition"].
+  if re.search(email_condition , user_email):     # Conditional "if-else" to check wheather the user entered email is valid or invalid. 
+      print("Valid Email.")
+  else:
+      print("Invalid Email.")
