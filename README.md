@@ -15,3 +15,6 @@ re: Python’s regular expression module for basic syntax validation.
 
 dns.resolver: A DNS resolver library used to check the validity of the domain’s MX records.
 email-validator: A third-party package for more comprehensive email validation, including domain checks
+
+# Installation:
+    pip install dnspython
