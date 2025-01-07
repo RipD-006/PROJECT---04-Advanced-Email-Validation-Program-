@@ -11,9 +11,9 @@ This Python project provides an advanced email address validation system that co
 5) USER-FRIENDLY INTERFACE: A simple and interactive command-line interface (CLI) is available to input Email Addresses, with clear success or error messages indicating the result of the validation check.
 
 # Required Libraries & Dependencies:
-re: Python’s regular expression module for basic syntax validation.
+[re] : Python’s regular expression module for basic syntax validation.
 
-dns.resolver: A DNS resolver library used to check the validity of the domain’s MX records.
+[dns.resolver] : A DNS resolver library used to check the validity of the domain’s MX records.
 email-validator: A third-party package for more comprehensive email validation, including domain checks
 
 # Installation:
