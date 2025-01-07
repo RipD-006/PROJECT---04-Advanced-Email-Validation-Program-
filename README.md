@@ -1,2 +1,2 @@
-# PROJECT---04-Email-Validation-Program-Using-Regex-
-This Python project provides an advanced email address validation system that combines both regular expression (Regex) and DNS lookup techniques to ensure email addresses are both syntactically and domain-valid. The goal of this project is to ensure that an email adheres to the correct format, domain and syntax rules commonly used for Email IDs.
+# [PROJECT-04] Advanced Email Validation Program:
+This Python project provides an advanced email address validation system that combines both regular expression (Regex) and DNS lookup techniques to ensure email addresses are both syntactically and domain-valid. The goal of this project is to ensure that an email adheres to the correct format, domain and syntax rules commonly used for email addresses.
