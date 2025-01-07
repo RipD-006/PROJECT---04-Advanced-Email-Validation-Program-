@@ -9,3 +9,9 @@ This Python project provides an advanced email address validation system that co
 3) REGEX PATTERN MATCHING: Regular Expression (REGEX) Pattern Matching utilizes regular expression to perform a quick and efficient check on the overall structure of the email address. This includes rules such as local part can contain letters, numbers and special characters; domain part must have a vaild structure with at least one "." seperating the domain and the Top-Level-Domain (TLD).
 4) EMAIL FORMAT SUGGESTIONS: If the email address is invalid the system can provide suggestions for correcting common mistakes (i.e. Missing "@"; Incorrect Domain; or Invalid Characters.
 5) USER-FRIENDLY INTERFACE: A simple and interactive command-line interface (CLI) is available to input Email Addresses, with clear success or error messages indicating the result of the validation check.
+
+# Required Libraries & Dependencies:
+1) re: Python’s regular expression module for basic syntax validation.
+
+2) dns.resolver: A DNS resolver library used to check the validity of the domain’s MX records.
+email-validator: A third-party package for more comprehensive email validation, including domain checks
