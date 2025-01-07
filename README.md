@@ -17,4 +17,9 @@ dns.resolver: A DNS resolver library used to check the validity of the domain’
 email-validator: A third-party package for more comprehensive email validation, including domain checks
 
 # Installation:
+The REGEX module is part of the standard library and its syntax is re, meaning it is included with Python by default. Therefore, you do not need to install the re module separately. You can use it directly in your code without any additional installation steps.
+        import re
+
+To use DNS lookups as part of your project (e.g., checking MX records for email validation), you will need to install the dnspython package, which is not part of the standard library.
+To install it, you can run:
     pip install dnspython
